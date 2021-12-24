@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
     <LinearLayout
 
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
             android:id="@+id/youtube_player_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:videoId="A67ZkAd1wmI"
+            app:videoId="S_dfq9rFWAE"
             app:autoPlay="true" />
 
         <LinearLayout
@@ -24,26 +24,29 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/but_back1"
+                android:id="@+id/but_back2"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/previous_video"
                 android:layout_margin="8dp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:layout_weight="1"
+                android:background="@color/textViewBackColor"
+                android:text="@string/previous_video"
+                android:textColor="#880E4F" />
 
             <Button
-                android:id="@+id/but_next1"
+                android:id="@+id/but_next2"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/next_video"
                 android:layout_margin="8dp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:layout_weight="1"
+                android:background="@color/textViewBackColor"
+                android:text="@string/next_video"
+                android:textColor="#880E4F" />
 
         </LinearLayout>
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

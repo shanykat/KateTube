@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">KateTube</string>
+    <string name="previous_video">Previous video</string>
+    <string name="next_video">Next video</string>
 </resources>

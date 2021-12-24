@@ -25,25 +25,21 @@
 
             <Button
                 android:id="@+id/button3"
-                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@color/textViewBackColor"
                 android:text="@string/previous_video"
-                android:textColor="#880E4F" />
+                android:layout_margin="8dp"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button4"
-                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@color/textViewBackColor"
                 android:text="@string/next_video"
-                android:textColor="#880E4F" />
+                android:layout_margin="8dp"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
 

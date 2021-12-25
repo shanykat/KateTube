@@ -3,6 +3,8 @@ package org.o7planning.katetube;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button but_back1, but_next1, nBut_comment;
     EditText nEditTextComment;
+    RecyclerView nCommentsRecycler;
 
     ArrayList <String> comments = new ArrayList<>();
 
@@ -55,6 +58,16 @@ public class MainActivity extends AppCompatActivity {
 
         nBut_comment = findViewById(R.id.but_comment);
         nEditTextComment = findViewById(R.id.comment);
+        nCommentsRecycler = findViewById(R.id.comment_recycler);
+
+        nCommentsRecycler.setLayoutManager( new LinearLayoutManager( this ));
+
+
+        DataAdapter dataAdapter = new DataAdapter(this, comments);
+
+        nCommentsRecycler.setAdapter(dataAdapter);
+
+
 
         nBut_comment.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,6 +99,8 @@ public class MainActivity extends AppCompatActivity {
             public void onChildAdded(@NonNull DataSnapshot datasnapshot, @Nullable String previousChildName) {
                 String comt = datasnapshot.getValue(String.class);
                 comments.add(comt);
+                dataAdapter.notifyDataSetChanged();
+                nCommentsRecycler.smoothScrollToPosition(comments.size());
             }
 
             @Override

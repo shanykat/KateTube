@@ -15,7 +15,7 @@
             android:id="@+id/youtube_player_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:videoId="4EoUz39nPMM"
+            app:videoId="XpMzAJJL1l0"
             app:autoPlay="true" />
 
         <LinearLayout
@@ -32,7 +32,8 @@
                 android:layout_weight="1"
                 android:background="@color/textViewBackColor"
                 android:text="@string/previous_video"
-                android:textColor="#880E4F" />
+                android:textColor="#880E4F"
+                android:onClick="clickButback3"/>
 
             <Button
                 android:id="@+id/but_next3"
@@ -43,7 +44,8 @@
                 android:layout_weight="1"
                 android:background="@color/textViewBackColor"
                 android:text="@string/next_video"
-                android:textColor="#880E4F" />
+                android:textColor="#880E4F"
+                android:onClick="clickButnext3"/>
 
         </LinearLayout>
 

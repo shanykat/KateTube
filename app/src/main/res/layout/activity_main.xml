@@ -32,7 +32,8 @@
                 android:layout_weight="1"
                 android:background="@color/textViewBackColor"
                 android:text="@string/previous_video"
-                android:textColor="#880E4F" />
+                android:textColor="#880E4F"
+                android:onClick="clickButback1"/>
 
             <Button
                 android:id="@+id/but_next1"
@@ -43,7 +44,8 @@
                 android:layout_weight="1"
                 android:background="@color/textViewBackColor"
                 android:text="@string/next_video"
-                android:textColor="#880E4F" />
+                android:textColor="#880E4F"
+                android:onClick="clickButnext1"/>
 
         </LinearLayout>
 

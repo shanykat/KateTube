@@ -11,7 +11,7 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
     Button but_back1, but_next1;
 
@@ -19,11 +19,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        but_back1 = (Button) findViewById(R.id.but_back1);
-        but_back1.setOnClickListener(this);
-        but_next1 = (Button) findViewById(R.id.but_next1);
-        but_next1.setOnClickListener(this);
-
 
         YouTubePlayerView youTubePlayerView = findViewById(R.id.youtube_player_view);
         getLifecycle().addObserver(youTubePlayerView);
@@ -37,20 +32,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
     }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
+    public void clickButnext1 (View view){
+        switch (view.getId()) {
             case R.id.but_next1:
-                //переходим ко второй активити
-                Intent intent = new Intent (this, MainActivity2.class);
+                // переходим на вторую активити
+                Intent intent = new Intent(this, MainActivity2.class);
                 startActivity(intent);
                 break;
             default:
                 break;
-
-
         }
+
+    }
+
+    public void clickButback1 (View view){
+        switch (view.getId()) {
+            case R.id.but_back1:
+                // возвращаемся на третью активити
+                Intent intent = new Intent(this, MainActivity3.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+
     }
 }
 

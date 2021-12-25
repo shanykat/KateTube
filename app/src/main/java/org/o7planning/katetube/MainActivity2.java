@@ -12,7 +12,7 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.Abs
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 import android.os.Bundle;
 
-public class MainActivity2 extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity2 extends AppCompatActivity {
 
     Button but_back2, but_next2;
 
@@ -21,10 +21,10 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        but_back2 = (Button) findViewById(R.id.but_back2);
-        but_back2.setOnClickListener(this);
-        but_next2 = (Button) findViewById(R.id.but_next2);
-        but_next2.setOnClickListener(this);
+//        but_back2 = (Button) findViewById(R.id.but_back2);
+//        but_back2.setOnClickListener(this);
+//        but_next2 = (Button) findViewById(R.id.but_next2);
+//        but_next2.setOnClickListener(this);
 
         YouTubePlayerView youTubePlayerView = findViewById(R.id.youtube_player_view);
         getLifecycle().addObserver(youTubePlayerView);
@@ -37,22 +37,43 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
             }
         });
     }
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.but_next2:
-                // переходим на третью активити
-                Intent intent = new Intent (this, MainActivity3.class);
+    public void clickButback2(View view) {
+        switch (view.getId()) {
+            case R.id.but_back2:
+                // возвращаемся на первую активити
+                Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
-
                 break;
             default:
                 break;
-
-
-
         }
+
     }
 
-
+    public void clickButnext2(View view) {
+        switch (view.getId()) {
+            case R.id.but_next2:
+                // переходим на третью активити
+                Intent intent = new Intent(this, MainActivity3.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+//    @Override
+//    public void onClick(View v) {
+//        switch (v.getId()) {
+//            case R.id.but_next2:
+//                // переходим на третью активити
+//                Intent intent = new Intent (this, MainActivity3.class);
+//                startActivity(intent);
+//
+//                break;
+//            default:
+//                break;
+//
+//
+//        }
+//    }
+    }
 }

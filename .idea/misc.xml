@@ -4,9 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KateTube/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.75" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/KateTube/app/src/main/res/layout/activity_main.xml" value="0.271286231884058" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/KateTube/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KateTube/app/src/main/res/layout/activity_main2.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KateTube/app/src/main/res/layout/activity_main3.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/KateTube/app/src/main/res/layout/item_comment.xml" value="0.22" />
       </map>
     </option>
   </component>

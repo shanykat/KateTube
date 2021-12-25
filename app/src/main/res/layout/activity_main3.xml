@@ -5,22 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity3">
+
     <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtube_player_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:videoId="XpMzAJJL1l0"
-            app:autoPlay="true" />
+            app:autoPlay="true"
+            app:videoId="XpMzAJJL1l0" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <Button
@@ -31,9 +32,9 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@color/textViewBackColor"
+                android:onClick="clickButback3"
                 android:text="@string/previous_video"
-                android:textColor="#880E4F"
-                android:onClick="clickButback3"/>
+                android:textColor="#880E4F" />
 
             <Button
                 android:id="@+id/but_next3"
@@ -43,11 +44,14 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@color/textViewBackColor"
+                android:onClick="clickButnext3"
                 android:text="@string/next_video"
-                android:textColor="#880E4F"
-                android:onClick="clickButnext3"/>
+                android:textColor="#880E4F" />
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 

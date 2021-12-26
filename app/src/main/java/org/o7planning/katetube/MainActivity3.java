@@ -44,6 +44,7 @@ public class MainActivity3 extends AppCompatActivity {
         }
 
     }
+
     public void clickButback3 (View view) {
         switch (view.getId()) {
             case R.id.but_back3:

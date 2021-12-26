@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
 
     private  static int MAX_COMMENT_LENGTH=50;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
         DataAdapter dataAdapter = new DataAdapter(this, comments);
 
         nCommentsRecycler.setAdapter(dataAdapter);
-
 
 
         nBut_comment.setOnClickListener(new View.OnClickListener() {

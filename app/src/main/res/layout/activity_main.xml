@@ -25,26 +25,24 @@
 
             <Button
                 android:id="@+id/but_back1"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@color/textViewBackColor"
+                android:background="@drawable/custom_button"
                 android:text="@string/previous_video"
-                android:textColor="#880E4F"
-                android:onClick="clickButback1"/>
+                android:textColor="#fff"
+                android:onClick="clickButback1" />
 
             <Button
                 android:id="@+id/but_next1"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@color/textViewBackColor"
+                android:background="@drawable/custom_button"
                 android:text="@string/next_video"
-                android:textColor="#880E4F"
+                android:textColor="#fff"
                 android:onClick="clickButnext1"/>
 
         </LinearLayout>
@@ -74,13 +72,13 @@
 
                 <Button
                     android:id="@+id/but_comment"
-                    style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/textViewBackColor"
-                    android:backgroundTint="@color/textViewBackColor"
+                    android:background="@drawable/custom_button"
                     android:text="@string/commentar"
-                    android:textColor="#880E4F"></Button>
+                    android:textColor="#fff">
+
+                </Button>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

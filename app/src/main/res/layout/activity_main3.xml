@@ -26,27 +26,25 @@
 
             <Button
                 android:id="@+id/but_back3"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@color/textViewBackColor"
+                android:background="@drawable/custom_button"
                 android:onClick="clickButback3"
                 android:text="@string/previous_video"
-                android:textColor="#880E4F" />
+                android:textColor="#fff" />
 
             <Button
                 android:id="@+id/but_next3"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@color/textViewBackColor"
+                android:background="@drawable/custom_button"
                 android:onClick="clickButnext3"
                 android:text="@string/next_video"
-                android:textColor="#880E4F" />
+                android:textColor="#fff" />
 
         </LinearLayout>
         <LinearLayout

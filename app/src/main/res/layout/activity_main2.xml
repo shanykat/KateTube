@@ -25,26 +25,24 @@
 
             <Button
                 android:id="@+id/but_back2"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@color/textViewBackColor"
+                android:background="@drawable/custom_button"
                 android:text="@string/previous_video"
-                android:textColor="#880E4F"
+                android:textColor="#fff"
                 android:onClick="clickButback2"/>
 
             <Button
                 android:id="@+id/but_next2"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="@color/textViewBackColor"
+                android:background="@drawable/custom_button"
                 android:text="@string/next_video"
-                android:textColor="#880E4F"
+                android:textColor="#fff"
                 android:onClick="clickButnext2"/>
 
         </LinearLayout>
